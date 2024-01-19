@@ -1,11 +1,11 @@
-import { ConfigureStore } from "@reduxjs/toolkit";
-import authslice from "./authslice";
+import {configureStore} from '@reduxjs/toolkit';
+import authSlice from './authSlice';
 
-
-const store = new ConfigureStore({
-   reducer:{
-       auth:authslice,
-   }
+const store = configureStore({
+    reducer: {
+        auth : authSlice,
+        //TODO: add more slices here for posts
+    }
 });
 
 
